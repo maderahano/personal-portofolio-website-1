@@ -93,7 +93,7 @@ modalCloses.forEach((modalClose) => {
 })
 
 /*==================== PORTFOLIO SWIPER ====================*/
-let swiper = new Swiper('.portfolio__container', {
+let swiperPortfolio = new Swiper('.portfolio__container', {
     cssMode: true,
     loop: true,
     navigation: {
@@ -106,7 +106,23 @@ let swiper = new Swiper('.portfolio__container', {
     },
 });
 
-/*==================== TESTIMONIAL ====================*/
+/*==================== TESTIMONIAL SWIPER ====================*/
+let swiperTestimonial = new Swiper('.testimonial__container', {
+    loop: true,
+    grabCursor: true,
+    spaceBetween: 48,
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
+    },
+    breakpoints: {
+        568: {
+            slidesPerView: 2,
+        },
+    },
+});
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 
